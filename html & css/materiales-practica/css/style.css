@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body{
+  line-height: 1;
+  font-family: 'Raleway', sans-serif;
+  background-image: url("../images/bg-body.png");
+}
+ol, ul {
+  padding: 0;
+	list-style: none;
+}
+
+.container{
+  margin: 10px 50px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 2%;
+  width: 46%;
+  align-content: flex-start;
+  border-radius: 3px;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #FDFAF7;
+}
+.card-image{
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-image img{
+  margin: 1%;
+  width: 100%;
+  border-radius: 50%;
+}
+.card-data {
+  flex:  2;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+.card-data a {
+
+  display: block;
+  background-color: gray;
+  color: white;
+  text-decoration: none;
+  align-self: flex-start;
+  height: 25px;
+  text-align: center;
+}
+.social-media {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.social-media li{
+  padding: 4px;
+  width: 25px;
+  background-color: #508fb8 ;
+  border-radius: 50%;
+
+}
+.social-media a{
+  color: white;
+  display: block;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .card{
+    flex-flow: column wrap;
+  }
+}
+@media (max-width: 425px) {
+  .container{
+    flex-direction: column;
+  }
+  .card{
+    width: auto;
+  }
+}

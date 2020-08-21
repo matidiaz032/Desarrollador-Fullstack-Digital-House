@@ -1,0 +1,70 @@
+body{
+  background-image: url(../images/weather.png);
+}
+.navegacion{
+  width: 960px;
+  position: fixed;
+  margin-left: 10px;
+  z-index: 1;
+}
+.logo{
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.barra{
+  background-color: orangered;
+  line-height: 40px;
+  margin-top: 40px;
+  margin-left: 35px;
+}
+.enlaces{
+color: white;
+text-decoration: none;
+margin-left: 40px;
+}
+.telefono1,.telefono2,.telefono3,.telefono4,.telefono5,.telefono6,.telefono7,.telefono8,.telefono9{
+  display: inline;
+  position: relative;
+  width: 300px;
+  margin: 10px 5px;
+}
+section{
+  background-color: white;
+  width: 960px;
+  position: relative;
+  top: 150px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  left: 40px;
+}
+.etiqueta{
+  position: absolute;
+  left: 220px;
+  z-index: 1
+}
+.boton{
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  z-index: 1;
+  background-color: red;
+  width: 100px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+}
+.nombre{
+  position: absolute;
+  left: 0px;
+  bottom: 80px;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}

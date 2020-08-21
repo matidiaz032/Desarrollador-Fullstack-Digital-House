@@ -1,0 +1,11 @@
+input:focus{
+  background-color: #92E2C2
+}
+textarea:hover{
+  resize: vertical;
+}
+body{
+  background-image: url(../images/l.png);
+  background-position: center;
+  background-attachment: fixed;
+}

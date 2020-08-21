@@ -1,0 +1,24 @@
+<?php
+echo "Hola Mundo. \n";
+$nombre=readline("ingrese su nombre: ");
+echo "Bienvenido $nombre \n";
+$edad=readline("ingrese su edad: ");
+if ($edad < 18) {
+  // code...
+  echo "Usted no esta autorizado en el sistema";
+  exit;
+} else {
+  // code...
+  echo "Autorizacion exitosa \n";
+}
+
+$hobbys=readline("ingrese sus hobbys separados por coma: ");
+$hobbysArray=explode(",",$hobbys);
+var_dump($hobbysArray);
+
+function hobbyValido($hobby){
+$largo= strlen($hobby);
+$esValido= $largo < 15 && $largo > 3? true:false;
+return $esValido;
+}
+ ?>

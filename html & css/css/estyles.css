@@ -1,0 +1,59 @@
+body{
+        background-image: url(../images/cork.png);
+        background-attachment: fixed;
+        background-position: center;
+        text-align: left;
+        font-family: serif;
+        font-size: 14px;
+        font-style: oblique;
+        line-height: 23px;
+    }
+h1{
+          text-align: center;
+          font-style: italic;
+          text-decoration: none;
+          color: black
+        }
+h2,h3,h4{
+  color: black
+  text-decoration: underline;
+}
+li{
+  color: #313130
+}
+link{
+  color: #FF9D0A
+}
+section{
+  background-color: white
+}
+article{
+  background-color: #E29803
+}
+header,section,footer{
+  width: 960px;
+  padding: 30px;
+  margin: 20px auto;
+  border: dotted 5px #E29803
+}
+header class="a"{
+  float: left;
+}
+.contenedor-a{
+  display: block;
+}
+.link{
+  float: left;
+  width: 300px
+}
+.imagenes{
+  display: block;
+  float: right;
+  width: 630px
+}
+.pie{
+  display: block;
+  clear: both;
+  font-style: italic;
+  background-color:white
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Formulario de Consultas</title>
+  </head>
+  <body>
+    <h1>Formulario de Consultas</h1>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <label>Nombre y Apellido:</label>
+        <input type="text" name="Usuario" required>
+        <label>Edad:</label>
+        <input type="number" name="Edad"><br>
+        <label>Correo Electronico:</label>
+        <input type="email" name="Correo" required>
+        <label>Telefono:</label>
+        <input type="tel" name="Telefono">
+        <label>Fecha:</label>
+        <input type="date" name="Fecha"><br>
+        <label>Comentarios</label>
+        <textarea required name="Comentarios"></textarea>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+      </fieldset>
+    </form>
+  </body>

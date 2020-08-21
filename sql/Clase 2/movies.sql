@@ -1,0 +1,16 @@
+select title as nombre from movies as peli;
+select concat(title,'(',year(release_date),')')as mi_pelicula from movies;
+select title as "Titulo de la Pelicula" from movies as peli order by "Titulo de la Pelicula" asc;
+select id as "id genero", name as "nombre_genero" from genres order by "nombre_genero" asc;
+set sql_mode=PIPES_AS_CONCAT;
+select "Actor: " ||first_name||" "||last_name as actor from actors order by actor asc;
+select * from movies;
+select t1.*,t2.name from movies as t1,genres as t2 where t1.genre_id=t2.id order by id asc;
+select * from movies, genres order by title;
+select title as titulo, first_name as nombre from movies, actors, actor_movie where movies.id=movie_id and actors.id=actor_id order by title, first_name;
+select first_name, last_name, title from actors, movies, actor_movie where actors.id=actor_id and movies.id=movie_id;
+select t1.*, t2.name from movies as t1 inner join genres as t2 on t1.genre_id=t2.id;
+select t1.*, t2.name from movies as t1 left join genres as t2 on t1.genre_id=t2.id;
+select t1.*, t2.name from movies as t1 right join genres as t2 on t1.genre_id=t2.id;
+select title, first_name from movies left join actor_movie on movies.id=movie_id inner join actors on actor_id=actors.id order by title asc, first_name asc;
+select first_name, last_name, title from actors left join actor_movie on actors.id inner join movies on movies.id;

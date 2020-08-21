@@ -1,0 +1,50 @@
+body{
+  background-image: url(../images/weather.png);
+}
+.navegacion{
+  width: 960px;
+  position: fixed;
+  margin-left: 10px;
+  z-index: 1;
+}
+.logo{
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.barra{
+  background-color: orangered;
+  line-height: 40px;
+  margin-top: 40px;
+  margin-left: 35px;
+}
+.enlaces{
+color: white;
+text-decoration: none;
+margin-left: 40px;
+}
+.productos{
+  background-color: white;
+  margin-left: 50px;
+  padding-left: 10px;
+  margin-top: 100px;
+  padding-top: 20px;
+  width: 960px;
+  display: inline-block
+}
+.tel1,.tel2,.tel3,.tel4,.tel5,.tel6,.tel7,.tel8,.tel9{
+  position: relative;
+  left: 5px;
+}
+.etiqueta{
+  position: absolute;
+  left: 200px;
+}
+.nombre{
+  position: absolute;
+  z-index: 1
+}
+.boton{
+  position: absolute;
+  z-index: 1
+}
